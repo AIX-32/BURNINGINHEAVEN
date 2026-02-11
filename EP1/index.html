@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <title>BURNING IN HEAVEN: EXTREMELY LOUD BUZZ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ddd;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding-bottom: 1rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            justify-content: center;
+            align-items: flex-start;
+            max-width: 1440px;
+            width: 100%;
+        }
+
+        .title-image-container {
+            display: flex;
+            justify-content: center;
+            flex: 0 1 auto;
+            max-width: 100%;
+        }
+
+        .title-image-container img {
+            height: auto;
+            display: block;
+            box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5);
+            background: #0a0a0a;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+        .text-box {
+            background-color: #000000;
+            color: #e5e5e5;
+            padding: 2.2rem 2.4rem;
+            font-size: 1rem;
+            line-height: 1.55;
+            box-shadow: 0 24px 48px rgba(0,0,0,0.6);
+            border: 1px solid #222;
+            overflow-y: auto;
+            max-height: 800px;
+            flex: 0 1 auto;
+            width: auto;
+            min-width: 300px;
+            align-self: flex-start;
+        }
+
+        .text-box p {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight {
+            color: #ffffff;
+            font-weight: 700;
+            border-bottom: 1px solid #666;
+            padding-bottom: 0.2rem;
+            display: inline;
+        }
+
+        .timestamp {
+            opacity: 0.65;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 0.3rem;
+            color: #bbbbbb;
+        }
+
+        .alert-message {
+            margin: 2.2rem 0 2rem;
+            text-align: left;
+            font-weight: 700;
+            color: #fff;
+            letter-spacing: 2.5px;
+            border-left: 3px solid #fff;
+            padding-left: 1.5rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+            text-transform: uppercase;
+        }
+
+        .text-box::-webkit-scrollbar {
+            width: 6px;
+        }
+        .text-box::-webkit-scrollbar-track {
+            background: #0a0a0a;
+        }
+        .text-box::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 0;
+        }
+        .text-box::-webkit-scrollbar-thumb:hover {
+            background: #888;
+        }
+
+        @media screen and (max-width: 900px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .title-image-container,
+            .text-box {
+                width: 100%;
+                max-width: 700px;
+            }
+            
+            .text-box {
+                max-height: 600px;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            body {
+                padding: 1.2rem;
+            }
+            .container {
+                gap: 1.5rem;
+            }
+            .text-box {
+                padding: 1.8rem;
+                max-height: 550px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title-image-container">
+            <img src="./img.png" alt="Burning in Heaven Title Card" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'600\' viewBox=\'0 0 100 100\'%3E%3Crect width=\'100\' height=\'100\' fill=\'%230a0a0a\'/%3E%3Ctext x=\'12\' y=\'55\' font-size=\'9\' fill=\'%23ffffff\' font-family=\'Courier New\'%3EBURNING%3C/text%3E%3Ctext x=\'12\' y=\'70\' font-size=\'9\' fill=\'%23aaaaaa\' font-family=\'Courier New\'%3EIN HEAVEN%3C/text%3E%3C/svg%3E';">
+        </div>
+        <div class="text-box">
+            <p>The first angel appeared above the North Sea at 04:13 UTC.</p>
+            <p>There was no entrance, no trumpets.<br>
+            Radar operators described it as a blind spot shaped like a person. Satellite feeds showed nothing just a hole where data should have been.</p>
+            <p>The fisherman saw it with their own eyes: a tall human, a female, its skin as white as plastic, a perfect human silhouette, symmetrical, silent, and devoid of the 'noise' of life. It was a masterpiece standing over a soon to be graveyard.<br>
+            It's crucified.</p>
+            <p>No one prayed at first, all recording.</p>
+            <p>When the broadcasts started, the churches filled in minutes. Mosques overflowed into streets. Every religion recognized the shape before it recognized the intent.</p>
+            <p>An angel.</p>
+            <p><span class="timestamp">At 04:39 UTC it moved.</span><br>
+            People were expecting love and kindness.<br>
+            The angel moved like an animal.<br>
+            It folded in on itself, wings bending the wrong way, joints popping quietly like cooling metal.<br>
+            It was heading toward the coast.</p>
+            <p>Cameras tried to follow it. Some feeds froze. Others showed frames out of order seconds repeating, then skipping. A fisherman screamed when the angel looked at him, not because it was angry, but because it noticed him the way a person notices dust.</p>
+            <p><span class="timestamp">At 04:41 UTC, the first city received the signal.</span></p>
+            <p>Phones buzzed at the same time. Emergency alerts, all identical, all unsigned.</p>
+            <div class="alert-message">
+                REMAIN STILL.
+            </div>
+            <p>Traffic locked instantly. People abandoned cars in intersections, running, praying, filming, calling names that didn't answer back. Above them, the angel accelerated, its movement no longer crawling, no longer walking adjusting, snapping back into a normal human form.<br>
+            When it reached the city, it stood upright again.<br>
+            Perfect. Still.</p>
+            <p>Then the light started.<br>
+            Not a beam. Not an explosion. The air itself brightened, like exposure being turned up on reality. People vanished midstep. Buildings emptied without collapsing. Shadows remained where bodies had been, burned into concrete and glass.<br>
+            There were no screams for long.</p>
+            <p><span class="timestamp">By 05:02 UTC, the city was silent.</span></p>
+            <p>The angel did not look around to admire its work. It turned its head toward the horizon, as if listening.</p>
+            <p>You can still hear the alarm.<br>
+            An extremely loud buzz.</p>
+        </div>
+    </div>
+</body>
+</html>

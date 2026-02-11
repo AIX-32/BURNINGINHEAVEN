@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>burning in heaven // episodes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: black;
+            font-family: 'Courier New', Courier, monospace;
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .nav {
+            background: rgb(255, 255, 255);
+            padding: 0 5%;
+            position: relative;
+            height: 70px; 
+        }
+
+        .logo-wrap {
+            position: relative;
+            height: 100%;
+        }
+
+        .logo-wrap img {
+            height: 140px;        
+            width: auto;
+            position: absolute;
+            bottom: -70px;          
+            left: 0;
+            display: block;
+            z-index: 10;
+            border: 0;
+            filter: brightness(1.05);
+        }
+
+        .logo-fallback {
+            display: none;
+            align-items: flex-end;
+            height: 100%;
+            font-size: 2.8rem;
+            font-weight: 700;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: white;
+            padding-bottom: 8px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 5% 4rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0 2rem;
+        }
+
+        .card {
+            background: #0a0a0a;
+            border: 1px solid #242424;
+            padding: 1.8rem 1.5rem;
+            transition: 0.1s ease;
+        }
+
+        .card:hover {
+            border-color: #555;
+            background: #0e0e0e;
+        }
+
+        .ep-num {
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            color: #888;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .ep-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.75rem;
+            line-height: 1.2;
+        }
+
+        .ep-desc {
+            color: #aaa;
+            font-size: 0.9rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .btn {
+            background: transparent;
+            border: 1px solid #555;
+            color: white;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: 0.1s;
+            font-family: 'Courier New', monospace;
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+            border-color: white;
+        }
+
+        .buzz {
+            margin: 2.5rem 0 1rem;
+            border-left: 4px solid white;
+            padding: 0.8rem 1.5rem;
+            background: #0c0c0c;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .remain {
+            font-weight: 700;
+            color: #ccc;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            border-top: 1px solid #222;
+            padding-top: 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            color: #666;
+            font-size: 0.8rem;
+        }
+
+        .footer a {
+            color: #aaa;
+            text-decoration: none;
+            border-bottom: 1px solid #444;
+        }
+
+        .footer a:hover {
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .logo-wrap img {
+                height: 110px;
+                bottom: -15px;
+            }
+            .nav { height: 80px; }
+            .grid { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav">
+        <div class="logo-wrap">
+            <img src="logo.png" alt="BURNING IN HEAVEN" id="siteLogo"
+                 onerror="this.style.display='none'; 
+                          document.querySelector('.logo-fallback').style.display='flex';">
+            <div class="logo-fallback">
+                B<span style="color:#888;">⧉</span>H
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        
+        <div class="grid">
+            <div class="card">
+                <div class="ep-num">00 // Feb 11</div>
+                <div class="ep-title">EXTREMELY LOUD BUZZ</div>
+                <div class="ep-desc">First angel.</div>
+                <a href="./EP1/index.html" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">01 // 04:39</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">02 // 04:41</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">03 // 05:02</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">04 // 06:17</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">05 // 08:44</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">06 // 11:02</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+            <div class="card">
+                <div class="ep-num">07 // 13:50</div>
+                <div class="ep-title">COMING SOON</div>
+                <div class="ep-desc">Further broadcasts will appear here.</div>
+                <a href="#" class="btn">READ</a>
+            </div>
+        </div>
+
+        <div style="background:#080808; border:1px solid #2a2a2a; padding:1.5rem 2rem; margin:2rem 0; color:#bbb;">
+            <p style="margin-bottom:0.8rem; color:#fff;">Next ep coming somtime in 2026-2384</p>
+            <p style="font-size:0.9rem;">side project you know.</p>
+        </div>
+
+        <div class="footer">
+            <div>BURNING IN HEAVEN // AIX</div>
+            <div style="display:flex; gap:1.8rem;">
+                <a onclick="alert('No discord yet.')">Discord</a>
+                <a href="https://discord.gg/uBaxPgUtZ8">Contact</a>
+                <a href="https://aix-32.github.io/Xyper/">Xyper</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+            const logoImg = document.getElementById('siteLogo');
+            if (logoImg) {
+                if (logoImg.complete && logoImg.naturalWidth === 0) {
+                    logoImg.style.display = 'none';
+                    document.querySelector('.logo-fallback').style.display = 'flex';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
