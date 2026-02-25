@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta name="description" content="A book.">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="BURNING IN HEAVEN">
+    <meta property="og:description" content="A book.">
+    <meta property="og:image" content="https://aix-32.github.io/BURNINGINHEAVEN/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aix-32.github.io/BURNINGINHEAVEN/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://aix-32.github.io/BURNINGINHEAVEN/logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>burning in heaven // episodes</title>
@@ -22,7 +34,7 @@
             background: rgb(255, 255, 255);
             padding: 0 5%;
             position: relative;
-            height: 70px; 
+            height: 70px;
         }
 
         .logo-wrap {
@@ -31,10 +43,10 @@
         }
 
         .logo-wrap img {
-            height: 140px;        
+            height: 140px;
             width: auto;
             position: absolute;
-            bottom: -70px;          
+            bottom: -70px;
             left: 0;
             display: block;
             z-index: 10;
@@ -171,17 +183,23 @@
                 height: 110px;
                 bottom: -15px;
             }
-            .nav { height: 80px; }
-            .grid { gap: 1.5rem; }
+
+            .nav {
+                height: 80px;
+            }
+
+            .grid {
+                gap: 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <div class="nav">
         <div class="logo-wrap">
-            <img src="logo.png" alt="BURNING IN HEAVEN" id="siteLogo"
-                 onerror="this.style.display='none'; 
+            <img src="logo.png" alt="BURNING IN HEAVEN" id="siteLogo" onerror="this.style.display='none'; 
                           document.querySelector('.logo-fallback').style.display='flex';">
             <div class="logo-fallback">
                 B<span style="color:#888;">⧉</span>H
@@ -190,7 +208,7 @@
     </div>
 
     <div class="main">
-        
+
         <div class="grid">
             <div class="card">
                 <div class="ep-num">00 // Feb 11</div>
@@ -258,7 +276,7 @@
     </div>
 
     <script>
-        window.onload = function() {
+        window.onload = function () {
             const logoImg = document.getElementById('siteLogo');
             if (logoImg) {
                 if (logoImg.complete && logoImg.naturalWidth === 0) {
@@ -269,4 +287,5 @@
         }
     </script>
 </body>
+
 </html>
